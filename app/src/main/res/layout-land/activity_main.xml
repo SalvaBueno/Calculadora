@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wtfkn.calculadora.MainActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableLayout"
+        android:stretchColumns="*"
+        android:layout_below="@+id/operacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="7"
+                android:id="@+id/button"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:onClick="pulsar"
+                android:tag="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="8"
+                android:id="@+id/button2"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="8" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="9"
+                android:id="@+id/button3"
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="9" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button19"
+                android:tag="D"
+                android:onClick="pulsar"
+                android:textSize="20dp"
+                android:layout_above="@+id/tableLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="3"
+                android:text="«"
+                android:textColor="@color/abc_search_url_text" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MS"
+                android:id="@+id/button24"
+                android:tag="MS"
+                android:onClick="pulsar"
+                android:textSize="15dp"
+                android:layout_above="@+id/tableLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="4"
+                android:textColor="#FF000000" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="/"
+                android:id="@+id/button11"
+                android:layout_column="5"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="/"
+                android:textColor="#f5c31f" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="-"
+                android:id="@+id/button13"
+                android:layout_column="6"
+                android:textSize="20dp"
+                android:onClick="pulsar"
+                android:tag="-"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#f5c31f" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="raiz"
+                android:id="@+id/button34"
+                android:tag="raiz"
+                android:onClick="pulsar"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:layout_column="7"
+                android:textColor="#28a9e9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="4"
+                android:id="@+id/button4"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:onClick="pulsar"
+                android:tag="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="5"
+                android:id="@+id/button5"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="5" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="6"
+                android:id="@+id/button6"
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="6" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="0"
+                android:id="@+id/button15"
+                android:layout_column="3"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="."
+                android:id="@+id/button23"
+                android:layout_column="4"
+                android:textSize="20dp"
+                android:onClick="pulsar"
+                android:tag="."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="x"
+                android:id="@+id/button10"
+                android:layout_column="5"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="x"
+                android:textColor="#f5c31f" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="+"
+                android:id="@+id/button12"
+                android:layout_column="6"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="+"
+                android:textColor="#f5c31f" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="tg"
+                android:id="@+id/button33"
+                android:tag="tg"
+                android:onClick="pulsar"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:layout_column="7"
+                android:textColor="#28a9e9" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="1"
+                android:id="@+id/button7"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:onClick="pulsar"
+                android:tag="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="2"
+                android:id="@+id/button8"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="3"
+                android:id="@+id/button9"
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="3" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:text="C"
+                android:id="@+id/button16"
+                android:layout_column="3"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="pulsar"
+                android:tag="c"
+                android:layout_above="@+id/tableLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/abc_search_url_text" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="="
+                android:id="@+id/button18"
+                android:tag="="
+                android:onClick="pulsar"
+                android:textSize="20dp"
+                android:layout_above="@+id/tableLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="4"
+                android:textColor="#28a9e9" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MU"
+                android:id="@+id/button25"
+                android:tag="MU"
+                android:onClick="pulsar"
+                android:textSize="15dp"
+                android:layout_above="@+id/tableLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="5"
+                android:textColor="#FF000000" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="sen"
+                android:id="@+id/button27"
+                android:tag="sen"
+                android:onClick="pulsar"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:layout_column="6"
+                android:textColor="#28a9e9" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="cos"
+                android:id="@+id/button32"
+                android:tag="cos"
+                android:onClick="pulsar"
+                android:layout_marginTop="0dp"
+                android:textSize="15dp"
+                android:layout_column="7"
+                android:textColor="#28a9e9" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numeros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="40dp"
+        android:text="0"
+        android:layout_marginRight="100dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/operacion"
+        android:textSize="25dp"
+        android:layout_below="@+id/numeros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="100dp" />
+
+</RelativeLayout>
